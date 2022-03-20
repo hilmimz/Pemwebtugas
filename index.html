@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+        <title>GoTravel- Biro Perjalanan dan Wisata</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Tajawal:wght@300&display=swap');
+			*{
+  				margin: 0;
+    			padding: 0;
+   				box-sizing: border-box;
+			}
+			/*Header & Navigation Bar*/
+			header{
+				width: 100%;
+				height: 72px;
+				background-color: #17252A;
+				font-family: 'Poppins', sans-serif;
+			}
+			.navbar-websitename{
+				position: absolute;
+				padding: 3px;
+				float: left;
+				margin-left: 10%;
+				margin-top: 10px;
+				color: #3aafa9;
+			}
+			.navbar-ul{
+				width: auto;
+				float: right;
+				margin-top: 8px;
+			}
+			.navbar-li{
+				display: inline-block;
+				padding: 15px 30px;
+			}
+			nav{
+				margin-right: 10%;
+			}
+			.navbarbutton{
+				text-align: center;
+				color: #def2f1;
+				text-decoration: none;
+				font-size: 1.2vw;
+			}
+			.navbarbutton:hover{
+				color: #F0c330;
+				transition: 0.5s;
+			}
+			/*slideshow*/
+			.slideshow{
+				width: 100%;
+				height: 92.3vh;
+				position: relative;
+				overflow: hidden;
+				background-color: #282828;
+			}
+			.slideshow-item{
+				width: inherit;
+				height: inherit;
+				position: absolute;
+				opacity: 0;
+				animation: cycleimages ease 15s infinite;
+			}
+			.slideshow-item:nth-child(1){
+				animation-delay: 0s;
+			}
+			.slideshow-item:nth-child(2){
+				animation-delay: 3s;
+			}
+			.slideshow-item:nth-child(3){
+				animation-delay: 6s;
+			}
+			.slideshow-item:nth-child(4){
+				animation-delay: 9s;
+			}
+			.slideshow-item:nth-child(5){
+				animation-delay: 12s;
+			}
+			.slideshow-item img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.slideshow-item-text{
+				max-width: 50%;
+				position: absolute;
+				top: 50%;
+				left: 0%;
+				transform: translateY(-50%);
+				background-color: rgba(0,0,0,.8);
+				color: #ffffff;
+				padding: 1rem 2rem;
+			}
+			.slideshow-item-text h5{
+				font-size: 3rem;
+				font-family: 'Tajawal', sans-serif;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				margin-bottom: 1.5rem;
+			}
+			.slideshow-item-text p{
+				font-size: 1.2rem;
+				font-family: 'Tajawal', sans-serif;
+				letter-spacing: 1px;
+				font-weight: 300;
+			}
+			@keyframes cycleimages{
+				25%{
+					opacity: 1;
+				}
+				40%{
+					opacity: 0;
+				}
+			}
+
+			/*Item*/
+			.item {
+				text-align: center;
+   				margin: 20px;
+				float: left;
+				width: 390px;
+			}
+			.circle-image{
+				border-radius: 50%;
+				width: 150px;
+				height: 150px;
+			}
+			.desclink{
+				color: black;
+				text-decoration: none;
+				padding: 15px;
+				text-align: center;
+				font-family: 'Poppins', sans-serif;
+			}
+			.desclink:hover{
+				color: #F0c330;
+				transition: 0.5s;
+			}
+			.container {
+				width: 1500px;
+   	 			padding-right: 15px;
+    			padding-left: 100px;
+    			margin-right: auto;
+    			margin-left: auto;
+			}
+			
+			/*other*/
+			.paragraph{
+				font-size: 1.2rem;
+				font-family: 'Tajawal', sans-serif;
+				letter-spacing: 1px;
+			}
+			.headerformat{
+				font-family: 'Poppins', sans-serif;
+				text-align: center;
+			}
+		</style>
+    </head>
+	<!--Navigation Bar-->
+	<header>
+		<h1 class="navbar-websitename">
+			GoTravel
+		</h1>
+		<nav>
+			<ul class="navbar-ul">
+				<li class="navbar-li"><a href="index.html" class="navbarbutton">Home</a></li>
+				<li class="navbar-li"><a href="product.html" class="navbarbutton">Product</a></li>
+				<li class="navbar-li"><a href="about_us.html" class="navbarbutton">About Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <body>
+		<!--Slideshow Image-->
+		<div class="slideshow">
+			<div class="slideshow-item">
+				<img src="bali.jpg" alt="bali">
+				<div class="slideshow-item-text">
+					<h5>Bali</h5>
+					<p>Nikmati keindahan Pulau Bali bersama kami untuk pengalaman yang lebih mengesankan.</p>
+				</div>
+			</div>
+			<div class="slideshow-item">
+				<img src="bandung.webp" alt="bandung">
+				<div class="slideshow-item-text">
+					<h5>Bandung</h5>
+					<p>Nikmati keindahan Kota Bandung bersama kami untuk pengalaman yang lebih mengesankan.</p>
+				</div>
+			</div>
+			<div class="slideshow-item">
+				<img src="jakarta.jpg" alt="jakarta">
+				<div class="slideshow-item-text">
+					<h5>Jakarta</h5>
+					<p>Nikmati keindahan Kota Jakarta bersama kami untuk pengalaman yang lebih mengesankan.</p>
+				</div>
+			</div>
+			<div class="slideshow-item">
+				<img src="jogja.jpg" alt="jogja">
+				<div class="slideshow-item-text">
+					<h5>Yogyakarta</h5>
+					<p>Nikmati keindahan Kota Yogyakarta bersama kami untuk pengalaman yang lebih mengesankan.</p>
+				</div>
+			</div>
+			<div class="slideshow-item">
+				<img src="solo.jpg" alt="solo">
+				<div class="slideshow-item-text">
+					<h5>Solo</h5>
+					<p>Nikmati keindahan Kota Solo bersama kami untuk pengalaman yang lebih mengesankan.</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<h2 class="headerformat" >
+			Pilih Perjalananmu
+		</h2>
+		<br>
+		<div class="container">
+			<div class="item">
+				<img class="circle-image" src="bali.jpg">
+				<h3 class="headerformat">
+					Bali
+				</h3>
+					<div>
+						<a class="desclink" href="product.html">Lebih detail>></a>
+					</div>
+			</div>
+			<div class="item">
+				<img class="circle-image" src="bandung.webp">
+				<h3 class="headerformat">
+					Bandung
+				</h3>
+					<div>
+						<a class="desclink" href="product.html">Lebih detail>></a>
+					</div>
+			</div>
+			<div class="item">
+				<img class="circle-image" src="jakarta.jpg">
+				<h3 class="headerformat">
+					Jakarta
+				</h3>
+					<div>
+						<a class="desclink" href="product.html">Lebih detail>></a>
+					</div>
+			</div>
+			<div class="item">
+				<img class="circle-image" src="jogja.jpg">
+				<h3 class="headerformat">
+					Jogja
+				</h3>
+					<div>
+						<a class="desclink" href="product.html">Lebih detail>></a>
+					</div>
+			</div>
+			<div class="item">
+				<img class="circle-image" src="solo.jpg">
+				<h3 class="headerformat">
+					Solo
+				</h3>
+					<div>
+						<a class="desclink" href="product.html">Lebih detail>></a>
+					</div>
+			</div>
+		</div>
+		<div style="clear: both;">
+			<br>
+			<br>
+			<br>
+			<footer>
+				<p style="text-align: center;">
+					INI FOOTER, TAPI BELUM JADI
+				</p>
+		</footer>
+		</div>
+    </body>
+</html>
